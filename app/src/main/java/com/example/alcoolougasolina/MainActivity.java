@@ -41,9 +41,9 @@ public class MainActivity extends AppCompatActivity {
             double valorResultado = valorEtanol / valorGasolina;
 
             if (valorResultado >= 0.7) {
-                textResultado.setText("A recomendação é abastecer com GASOLINA");
+                textResultado.setText("É recomendado abastecer com GASOLINA");
             } else if (valorResultado < 0.7) {
-                textResultado.setText("A recomedação é abastecer com ETANOL");
+                textResultado.setText("É recomendado abastecer com ETANOL");
             }
 
 
