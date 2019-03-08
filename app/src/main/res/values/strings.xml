@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Gasolina ou Etanol?</string>
+    <string name="app_name">Etanol ou Gasolina?</string>
     <string name="desenho_de_carro">Desenho de carro</string>
     <string name="Gasolina">Gasolina</string>
 </resources>
