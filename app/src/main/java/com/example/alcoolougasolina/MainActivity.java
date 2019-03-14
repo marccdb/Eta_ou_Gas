@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
 
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
-
     }
 
 

@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#FFFFFF</color>
     <color name="azul_background">#006894</color>
+    <color name="preto">#B9000000</color>
+
 </resources>
