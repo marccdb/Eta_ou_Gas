@@ -22,11 +22,12 @@ public class MainActivity extends AppCompatActivity {
     private TextView textKmReal2;
     private AdView mAdView;
 
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        MobileAds.initialize(this,"ca-app-pub-9348805108429232/5048253642");
+        MobileAds.initialize(this,"ca-app-pub-9348805108429232~2913044891");
 
         editGasolina = findViewById(R.id.editGasolina);
         editEtanol = findViewById(R.id.editEtanol);
@@ -36,10 +37,11 @@ public class MainActivity extends AppCompatActivity {
         textRendimento = findViewById(R.id.textRendimento);
         textKmReal = findViewById(R.id.textKmReal);
         textKmReal2 = findViewById(R.id.textKmReal2);
-        mAdView = findViewById(R.id.adView);
 
+        mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+
     }
 
 
