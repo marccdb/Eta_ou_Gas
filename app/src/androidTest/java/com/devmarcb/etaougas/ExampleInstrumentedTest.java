@@ -1,4 +1,4 @@
-package com.example.alcoolougasolina;
+package com.devmarcb.etaougas;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

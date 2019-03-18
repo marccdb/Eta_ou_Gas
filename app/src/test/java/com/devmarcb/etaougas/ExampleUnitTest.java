@@ -1,4 +1,4 @@
-package com.example.alcoolougasolina;
+package com.devmarcb.etaougas;
 
 import org.junit.Test;
 
