@@ -27,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         MobileAds.initialize(this,"ca-app-pub-9348805108429232~2913044891");
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView = findViewById(R.id.adView);
+        mAdView.loadAd(adRequest);
 
         editGasolina = findViewById(R.id.editGasolina);
         editEtanol = findViewById(R.id.editEtanol);
@@ -36,10 +39,6 @@ public class MainActivity extends AppCompatActivity {
         textRendimento = findViewById(R.id.textRendimento);
         textKmReal = findViewById(R.id.textKmReal);
         textKmReal2 = findViewById(R.id.textKmReal2);
-
-        mAdView = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
 
     }
 
@@ -110,13 +109,13 @@ public class MainActivity extends AppCompatActivity {
                 //valorResultado = EtKmCalculo / GasKmCalculo;
                 if (GasKmCalculo > EtKmCalculo) {
                     textResultado.setText("GASOLINA");
-                    textKmReal.setText("Quilometro/Real gasto com Gasolina: " + GasKmCalculoTexto + " Km");
-                    textKmReal2.setText("Quilometro/Real gasto com Etanol: " + EtKmCalculoTexto + " Km");
+                    textKmReal.setText("Km/Real gasto com Gasolina: " + GasKmCalculoTexto + " Km");
+                    textKmReal2.setText("Km/Real gasto com Etanol: " + EtKmCalculoTexto + " Km");
                     textRendimento.setText("");
                 } else if (GasKmCalculo < EtKmCalculo) {
                     textResultado.setText("ETANOL");
-                    textKmReal.setText("Quilometro/Real gasto com Gasolina: " + GasKmCalculoTexto + " Km");
-                    textKmReal2.setText("Quilometro/Real gasto com Etanol: " + EtKmCalculoTexto + " Km");
+                    textKmReal.setText("Km/Real gasto com Gasolina: " + GasKmCalculoTexto + " Km");
+                    textKmReal2.setText("Km/Real gasto com Etanol: " + EtKmCalculoTexto + " Km");
                     textRendimento.setText("");
                 }
 
