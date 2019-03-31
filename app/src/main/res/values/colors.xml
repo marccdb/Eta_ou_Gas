@@ -5,5 +5,6 @@
     <color name="colorAccent">#FFFFFF</color>
     <color name="azul_background">#006894</color>
     <color name="preto">#B9000000</color>
-
+    <color name="corGasolina">#ffffbb33</color>
+    <color name="corEtanol">#ff99cc00</color>
 </resources>
